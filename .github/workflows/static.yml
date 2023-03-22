@@ -1,0 +1,24 @@
+name: Build Pug with Gulp
+
+on:
+  push:
+    branches: [ pug ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build Pug with Gulp
+      run: gulp compile-pug
+
+    - name: Save compiled files
+      uses: actions/upload-artifact@v2
+      with:
+        name: compiled-pug
+        path: ./
