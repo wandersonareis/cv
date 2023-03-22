@@ -1,0 +1,65 @@
+extends templates/_layout.pug
+include mixins/_stacks.mixin.pug
+include mixins/_languages.mixin.pug
+include mixins/_project.mixin.pug
+include mixins/_education.mixin.pug
+
+block content
+    main.w3-light-grey
+        // Page Container
+        div.w3-content.w3-margin-top
+            // The Grid
+            div.w3-row-padding
+                // Left Column
+                div.w3-third
+                    div.w3-white.w3-text-grey.w3-card-4
+                        div.w3-display-container.profile-container
+                            img.profile-picture(src=profile.image alt=profile.imageAlt)
+                            div.w3-container.w3-text-black
+                                h2.profile-name #{profile.name || "No name"}
+                        div.w3-container
+                            p
+                                i.fa.fa-briefcase.fa-fw.w3-margin-right.w3-large.w3-text-teal
+                                | #{profile.jobRequired}
+                            p
+                                i.fa.fa-home.fa-fw.w3-margin-right.w3-large.w3-text-teal
+                                | #{profile.address}
+                            p
+                                i.fa.fa-envelope.fa-fw.w3-margin-right.w3-large.w3-text-teal
+                                | #{profile.contacts.email}
+                            p
+                                i.fa.fa-phone.fa-fw.w3-margin-right.w3-large.w3-text-teal
+                                | #{profile.contacts.number}
+                            hr
+                            p.w3-large
+                                b
+                                i.fa.fa-asterisk.fa-fw.w3-margin-right.w3-text-teal
+                                | #{pageStacks || "Stacks"}
+                                +stackList(profile.stacks)
+                                
+                            br
+                            p.w3-large.w3-text-theme
+                                b
+                                i.fa.fa-globe.fa-fw.w3-margin-right.w3-text-teal
+                                | #{pageLanguages || "Languages"}
+                            +languageList(profile.languages)
+                            br
+                        br
+                    // End Left Column
+                // Right Column
+                div.w3-twothird
+                    div.w3-container.w3-card.w3-white.w3-margin-bottom
+                        h2.w3-text-grey.w3-padding-16
+                            i.fa.fa-suitcase.fa-fw.w3-margin-right.w3-xxlarge.w3-text-teal
+                            | #{pageProjects || "Projects"}
+                        div.w3-container
+                            +projectList(projects)
+                            br
+                    div.w3-container.w3-card.w3-white
+                        h2.w3-text-grey.w3-padding-16
+                            i.fa.fa-certificate.fa-fw.w3-margin-right.w3-xxlarge.w3-text-teal
+                            | #{pageEducation || "Education"}
+                        +educationList(educations)                       
+                // End Right Column
+            // End Grid
+    // End Page Container

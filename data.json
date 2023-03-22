@@ -1,0 +1,40 @@
+{
+    "pageTitle": "Wanderson A Reis - Curriculo",
+    "pageStacks": "Stacks",
+    "pageLanguages": "Idiomas",
+    "pageProjects": "Projetos",
+    "pageEducation": "Formação",
+    "profile": {
+        "name": "Wanderson A Reis",
+        "image": "./assets/images/foto.webp",
+        "imageAlt": "foto do perfil",
+        "jobRequired": "Desenvolvedor Web",
+        "address": "Contagem, MG",
+        "contacts": {
+            "email": "wandersonfrost8@hotmail.com",
+            "number": "(31) 988807872"
+        },
+        "stacks": [
+           {"icon": "devicon-javascript-plain", "name": "Javascript"},
+           {"icon": "devicon-csharp-plain-wordmark colored", "name": "C#"},
+           {"icon": "devicon-react-original colored", "name": "React Js"},
+           {"icon": "devicon-express-original colored", "name": "Express Js"}
+        ],
+        "languages": [
+            "Português - Nativo",
+            "Inglês - Técnico"
+        ]
+    },
+    "projects": [
+        {"title": "Blazor Hybrid / Projeto pessoal",
+        "text": "Installer_Translation_FinalFantasyXIII_BlazorHybrid",
+        "url": "https://github.com/wandersonareis/Installer_Translation_FinalFantasyXIII_BlazorHybrid",
+        "timeline": "Fev 2023 - Mar 2023",
+        "description": "Desenvolvi o projeto utilizando Blazor Hybrid para criar um instalador atualizável que também permitisse atualizar a tradução para a última versão da comunidade. A utilização do Blazor Hybrid permitiu criar uma aplicação web responsiva com recursos nativos para proporcionar uma melhor experiência aos usuários. A solução implementada atendeu à necessidade de distribuir um aplicativo atualizado e com as últimas traduções para os usuários de forma automatizada e simplificada.",
+        "current": true}
+    ],
+    "educations": [
+        {"InstitutionName": "Ensino Médio - Completo", "timeline": "1999 - 2003", "type": "Científico"},
+        {"InstitutionName": "Cubos Academy", "timeline": "2022 - 2023" , "type": "Desenvolvedor Web Fullstack"}
+    ]
+}

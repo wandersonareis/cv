@@ -1,0 +1,29 @@
+mixin projectList(projects)
+  each project in projects
+    h5.w3-opacity #{project.title}
+    a.w3-opacity(
+      href=`${project.url}`
+      target='_blank'
+      rel='noopener noreferrer'
+      ) #{project.text}
+    h6.w3-text-teal
+        i.fa.fa-calendar.fa-fw.w3-margin-right
+        | #{project.timeline} - 
+        if project.current
+        span.w3-tag.w3-teal.w3-round Atual
+    div(class="clickable")
+      p
+        | #{project.description}
+
+    script.
+      const div = document.querySelector('.clickable');
+      const p = div.querySelector('p');
+      const maxHeight = '80px';
+      div.style.maxHeight = maxHeight;
+      div.style.overflow = 'hidden';
+      div.style.textAlign = 'justify';
+      div.style.cursor = 'pointer';
+
+      div.addEventListener('click', () => {
+        div.style.maxHeight = '';
+      });
