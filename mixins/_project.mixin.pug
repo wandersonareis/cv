@@ -6,11 +6,11 @@ mixin projectList(projects)
       target='_blank'
       rel='noopener noreferrer'
       ) #{project.text}
-    h6.w3-text-teal
-        i.fa.fa-calendar.fa-fw.w3-margin-right
+    h6.w3-text-blue-grey
+        i.fa.fa-calendar.fa-fw.w3-margin-right.w3-text-indigo
         | #{project.timeline} - 
         if project.current
-        span.w3-tag.w3-teal.w3-round Atual
+        span.w3-tag.w3-blue.w3-round Atual
     div(class="clickable")
       p
         | #{project.description}
