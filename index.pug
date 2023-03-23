@@ -19,28 +19,28 @@ block content
                                 h2.profile-name #{profile.name || "No name"}
                         div.w3-container
                             p
-                                i.fa.fa-briefcase.fa-fw.w3-margin-right.w3-large.w3-text-teal
+                                i.fa.fa-briefcase.fa-fw.w3-margin-right.w3-large.w3-text-indigo
                                 | #{profile.jobRequired}
                             p
-                                i.fa.fa-home.fa-fw.w3-margin-right.w3-large.w3-text-teal
+                                i.fa.fa-home.fa-fw.w3-margin-right.w3-large.w3-text-indigo
                                 | #{profile.address}
                             p
-                                i.fa.fa-envelope.fa-fw.w3-margin-right.w3-large.w3-text-teal
+                                i.fa.fa-envelope.fa-fw.w3-margin-right.w3-large.w3-text-indigo
                                 | #{profile.contacts.email}
                             p
-                                i.fa.fa-phone.fa-fw.w3-margin-right.w3-large.w3-text-teal
+                                i.fa.fa-phone.fa-fw.w3-margin-right.w3-large.w3-text-indigo
                                 | #{profile.contacts.number}
                             hr
                             p.w3-large
                                 b
-                                i.fa.fa-asterisk.fa-fw.w3-margin-right.w3-text-teal
+                                i.fa.fa-asterisk.fa-fw.w3-margin-right.w3-text-indigo
                                 | #{pageStacks || "Stacks"}
                                 +stackList(profile.stacks)
                                 
                             br
                             p.w3-large.w3-text-theme
                                 b
-                                i.fa.fa-globe.fa-fw.w3-margin-right.w3-text-teal
+                                i.fa.fa-globe.fa-fw.w3-margin-right.w3-text-indigo
                                 | #{pageLanguages || "Languages"}
                             +languageList(profile.languages)
                             br
@@ -50,14 +50,14 @@ block content
                 div.w3-twothird
                     div.w3-container.w3-card.w3-white.w3-margin-bottom
                         h2.w3-text-grey.w3-padding-16
-                            i.fa.fa-suitcase.fa-fw.w3-margin-right.w3-xxlarge.w3-text-teal
+                            i.fa.fa-suitcase.fa-fw.w3-margin-right.w3-xxlarge.w3-text-indigo
                             | #{pageProjects || "Projects"}
                         div.w3-container
                             +projectList(projects)
                             br
-                    div.w3-container.w3-card.w3-white
+                    article.w3-container.w3-card.w3-white
                         h2.w3-text-grey.w3-padding-16
-                            i.fa.fa-certificate.fa-fw.w3-margin-right.w3-xxlarge.w3-text-teal
+                            i.fa.fa-certificate.fa-fw.w3-margin-right.w3-xxlarge.w3-text-indigo
                             | #{pageEducation || "Education"}
                         +educationList(educations)                       
                 // End Right Column
