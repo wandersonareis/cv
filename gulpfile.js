@@ -11,8 +11,4 @@ gulp.task('compile-pug', function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('watch', function() {
-  gulp.watch('**/*.pug', gulp.series('compile-pug'));
-});
-
-gulp.task('default', gulp.series('compile-pug', 'watch'));
+gulp.task('default', gulp.series('compile-pug'));
