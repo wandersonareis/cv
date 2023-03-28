@@ -26,12 +26,18 @@
         ]
     },
     "projects": [
+        {"title": "API Dindin 2.0 / Desafio de aprendizado",
+        "text": "API Dindin 2.0",
+        "url": "https://github.com/wandersonareis/desafio-backend-03-dindin",
+        "timeline": "Mar 2023 - Mar 2023",
+        "description": "Durante o desafio Back-end do Módulo 3, meu objetivo era criar uma API RESTful capaz de realizar diversas operações relacionadas a usuários e transações. A API desenvolvida permite o cadastro e login de usuários, bem como a edição de informações pessoais. Também é possível listar transações, detalhar transações específicas e cadastrar novas transações. Além disso, a API oferece a funcionalidade de edição, remoção e obtenção de extrato de transações, incluindo a possibilidade de filtrar transações por categoria. No geral, foi um projeto desafiador e extremamente gratificante. Espero ter conseguido atender aos requisitos do desafio e, acima de tudo, proporcionar uma experiência de usuário fluída e completa.",
+        "current": true},
         {"title": "Blazor Hybrid / Projeto pessoal",
         "text": "Installer_Translation_FinalFantasyXIII_BlazorHybrid",
         "url": "https://github.com/wandersonareis/Installer_Translation_FinalFantasyXIII_BlazorHybrid",
         "timeline": "Fev 2023 - Mar 2023",
-        "description": "Desenvolvi o projeto utilizando Blazor Hybrid para criar um instalador atualizável que também permitisse atualizar a tradução para a última versão da comunidade. A utilização do Blazor Hybrid permitiu criar uma aplicação web responsiva com recursos nativos para proporcionar uma melhor experiência aos usuários. A solução implementada atendeu à necessidade de distribuir um aplicativo atualizado e com as últimas traduções para os usuários de forma automatizada e simplificada.",
-        "current": true}
+        "description": "Desenvolvi o projeto utilizando Blazor Hybrid para criar um instalador atualizável que também permitisse atualizar a tradução para a última versão da comunidade. A utilização do Blazor Hybrid permitiu criar uma aplicação web responsiva com recursos nativos para proporcionar uma melhor experiência aos usuários. A solução implementada atendeu à necessidade de distribuir um aplicativo atualizado e com as últimas traduções para os usuários de forma automatizada e simplificada."
+        }
     ],
     "educations": [
         {"InstitutionName": "Ensino Médio - Completo", "timeline": "1999 - 2003", "type": "Científico"},

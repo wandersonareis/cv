@@ -10,7 +10,8 @@ mixin projectList(projects)
         i.fa.fa-calendar.fa-fw.w3-margin-right.w3-text-indigo
         | #{project.timeline} - 
         if project.current
-        span.w3-tag.w3-blue.w3-round Atual
+          span.w3-tag.w3-blue.w3-round Atual
+
     div(class="clickable")
       p
         | #{project.description}
